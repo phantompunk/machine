@@ -77,7 +77,13 @@ elif xcode-select --install &>/dev/null; then
 else
     abort "Failed to install XCode command line tools."
 fi
- 
+
+if [ "$MACHINE" == "OSX" ];
+then
+    info "Adjusting macOS settings."
+    defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+fi
+
 info "Checking Git installation"
 if ! [ -x "$(command -v git)" ];
 then
