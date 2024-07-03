@@ -5,10 +5,16 @@ Machine is a simple script to setup a macOS or Linux machine for development.
 
 ## Install
 
-Download the script:
+For fresh macOS installs run:
+```bash
+sudo softwareupdate -i -a
+xcode-select --install
+```
+
+Clone the repo:
 
 ```bash
-curl --remote-name https://raw.githubusercontent.com/phantompunk/machine/setup
+git clone https://github.com/phantompunk/machine.git
 ```
 
 | 🚧 Use at your own risk! Review and modify before executing. |
@@ -23,7 +29,7 @@ less setup
 Execute the downloaded script:
 
 ```bash
-sh setup 2>&1 | tee ~/machine.log
+sh machine 2>&1 | tee ~/machine.log
 ```
 
 Optionally, review the log:
@@ -43,6 +49,7 @@ Installs developer tools:
 - eza
 - fish
 - jq
+- mas
 - neovim
 - pipx
 - pre-commit
@@ -58,8 +65,10 @@ Installs language specific tools:
 - pipx
 - terraform
 
-Installs Kubernetes tools:
+Installs Docker/Kubernetes tools:
 
+- colima
+- docker
 - helm
 - k9s
 - kind
@@ -71,39 +80,11 @@ Installs Kubernetes tools:
 
 Installs useful tools:
 
-- Obsidian
-- Arc Browser
+- 1password
 - Brave Browser
-- 
-
-Installs essential developer tools (list customizable in the script).
-Sets Fish as the default shell.
-
-brew "asdf"
-brew "bat"
-brew "bpython"
-brew "diff-so-fancy"
-brew "eksctl"
-brew "eza"
-brew "exercism"
-brew "fish"
-brew "helm"
-brew "hugo"
-brew "jq"
-brew "k9s"
-brew "kind"
-brew "kubernetes-cli"
-brew "kubectx"
-brew "kubeseal"
-brew "kubeval"
-brew "minikube"
-brew "mysql-client"
-brew "neovim"
-brew "node"
-brew "pipx"
-brew "postgresql@14"
-brew "pre-commit"
-brew "ripgrep"
-brew "terraform"
-brew "tldr"
-brew "yq"
+- Google Drive
+- Kitty
+- Notunes
+- Obsidian
+- Rocket
+- Typora
