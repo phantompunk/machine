@@ -136,6 +136,16 @@ then
 else
     ok "Fish shell already set as default shell."
 fi
+
+info "Configuring directories for Go..."
+if ! [ -d "$HOME/go" ];
+then
+    einfo "Creating directory for go."
+    mkdir -p $HOME/go/{bin,src,pkg}
+    eok "Folders ~/go/{bin,src,pkg} created successfully."
+else
+    ok "Go directory already configured."
+fi
  
 info "Installing apps from AppStore..."
 if [ -x "$(command -v mas)" ];
