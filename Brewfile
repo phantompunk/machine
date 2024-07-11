@@ -7,8 +7,8 @@ brew "colima"
 brew "diff-so-fancy"
 brew "docker"
 brew "eksctl"
-brew "eza"
 brew "exercism"
+brew "eza"
 brew "fish"
 brew "go"
 brew "helm"
@@ -44,3 +44,6 @@ cask "obsidian"
 cask "rocket"
 cask "typora"
 
+mas "Amphetamine", id: 937984704
+mas "Flow", id: 1423210932
+mas "NordVPN", id: 905953485
