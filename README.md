@@ -23,7 +23,7 @@ git clone https://github.com/phantompunk/machine.git
 Review the script before modifying or executing:
 
 ```bash
-less setup
+less machine
 ```
 
 Execute the downloaded script:
@@ -37,6 +37,9 @@ Optionally, review the log:
 ```bash
 less ~/machine.log
 ```
+
+[Create a SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+[Create a GPG Key](https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key#generating-a-gpg-key)
 
 ## What the script does:
 
@@ -75,7 +78,6 @@ Installs Docker/Kubernetes tools:
 - kubernetes-cli
 - kubectx
 - kubeseal
-- kubeval
 - minikube
 
 Installs useful tools:
@@ -88,3 +90,4 @@ Installs useful tools:
 - Obsidian
 - Rocket
 - Typora
+
