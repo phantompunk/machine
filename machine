@@ -81,7 +81,10 @@ fi
 if [ "$MACHINE" == "OSX" ];
 then
     info "Adjusting macOS settings."
+    einfo "Enabling tap to click."
     defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+    einfo "Remap Caps Lock to Escape."
+    hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
 fi
 
 info "Checking Git installation"
