@@ -78,7 +78,7 @@ else
     abort "Failed to install XCode command line tools."
 fi
 
-if [ "$MACHINE" == "OSX" ];
+if [[ "$MACHINE" == "OSX" && -x "$(command -v fish)" ]];
 then
     info "Adjusting macOS settings."
     einfo "Enabling tap to click."
@@ -104,7 +104,7 @@ then
     # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
     if [ "$MACHINE" == "OSX" ]; then
         einfo "Adding Homebrew to OSX PATH.";
-        (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> "$HOME"/.zprofile
+        (echo; echo "eval \"$(/opt/homebrew/bin/brew shellenv)\"") >> "$HOME"/.zprofile
         eval "$(/opt/homebrew/bin/brew shellenv)"
         eok "Homebrew successfully installed."
     fi
@@ -133,7 +133,7 @@ fi
 info "Changing default shell to Fish shell."
 if [[ "$SHELL" != *"fish"* ]];
 then
-    echo "$(which fish)" | sudo tee -a /etc/shells
+    which fish | sudo tee -a /etc/shells
     chsh -s "$(which fish)"
     eok "Changed the defualt shell to Fish."
     einfo "Add Homebrew to Fish Path."
@@ -146,7 +146,7 @@ info "Configuring directories for Go..."
 if ! [ -d "$HOME/go" ];
 then
     einfo "Creating directory for go."
-    mkdir -p $HOME/go/{bin,src,pkg}
+    mkdir -p "$HOME"/go/{bin,src,pkg}/
     eok "Folders ~/go/{bin,src,pkg} created successfully."
 else
     ok "Go directory already configured."
