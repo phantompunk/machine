@@ -1,5 +1,5 @@
 # Machine
-*Inspired by [thoughtbot/laptop](Thoughbot/Laptop) repo.*
+> Inspired by [Thoughtbot/Laptop](https://github.com/thoughtbot/laptop). 
 
 Machine is a simple script to setup a macOS or Linux machine for development.
 
@@ -44,21 +44,23 @@ less ~/machine.log
 ## What the script does:
 
 Install Fish Shell as default shell.
+
 Installs Homebrew (package manager for macOS).
+
 Installs developer tools:
 
-- bat
-- diff-so-fancy
-- eza
-- fish
-- jq
-- mas
-- neovim
-- pipx
-- pre-commit
-- ripgrep
-- tldr
-- yq
+- [bat](https://github.com/sharkdp/bat) for a modern replacement for `cat`
+- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) for easier to read git diffs
+- [eza](https://github.com/eza-community/eza) for a modern replacement for `ls`
+- [fish](https://github.com/fish-shell/fish-shell) for a minimal batteries included shell
+- [jq](https://github.com/stedolan/jq) for JSON file parsing
+- [mas](https://github.com/mas-cli/mas) for a Mac App Store CLI
+- [neovim](https://github.com/neovim/neovim) for a minimal terminal based editor
+- [pipx](https://github.com/pypa/pipx) for easy, safe python app installs
+- [pre-commit](https://github.com/pre-commit/pre-commit) for managing git pre-commit hooks
+- [ripgrep](https://github.com/BurntSushi/ripgrep) for a faster easier grep
+- [tldr](https://github.com/tldr-pages/tldr) for quick CLI cheatsheets
+- [yq](https://github.com/mikefarah/yq) for parsing YAML files like [jq](https://github.com/stedolan/jq)
 
 Installs language specific tools:
 
