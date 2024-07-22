@@ -64,32 +64,30 @@ Installs developer tools:
 
 Installs language specific tools:
 
-- asdf
-- bpython
-- node
-- pipx
-- terraform
+- https://github.com/asdf-vm/asdf for a multi-language runtime manager
+- [bpython](https://github.com/bpython/bpython) for a fancy Python REPL
+- [terraform](https://www.terraform.io/) for managing IaC
 
 Installs Docker/Kubernetes tools:
 
-- colima
-- docker
-- helm
-- k9s
-- kind
-- kubernetes-cli
-- kubectx
-- kubeseal
-- minikube
+- [colima](https://github.com/abiosoft/colima) for a minimal container runtimes
+- [docker](https://github.com/docker/cli) for managing container images
+- [helm](https://github.com/helm/helm) for managing k8s packages
+- [k9s](https://github.com/derailed/k9s) for monitoring k8s resources
+- [kind](https://github.com/kubernetes-sigs/kind) for testing k8s in docker
+- [kubernetes-cli](https://github.com/kubernetes/kubectl) for managing k8s resources
+- [kubectx](https://github.com/ahmetb/kubectx) for switching between k8s environments
+- [kubeseal](https://github.com/bitnami-labs/sealed-secrets) for encrypting k8s secrets
+- [minikube](https://github.com/kubernetes/minikube) for testing k8s
 
 Installs useful tools:
 
-- 1password
-- Brave Browser
-- Google Drive
-- Kitty
-- Notunes
-- Obsidian
-- Rocket
-- Typora
+- [1password](https://1password.com/) for a password manager
+- [Brave Browser](https://brave.com/download/) for Chrome with extra privacy
+- [Google Drive](https://www.google.com/drive/download/) for syncing Google Drive folders
+- [Kitty](https://github.com/kovidgoyal/kitty) for GPU based terminal emulator
+- [Notunes](https://github.com/tombonez/noTunes) to disable Itunes from launching
+- [Obsidian](https://github.com/obsidianmd/obsidian-releases) for note taking editor
+- [Rocket](https://matthewpalmer.net/rocket/) for slack-style emoji shortcuts
+- [Typora](https://typora.io/) for minimal markdown editor
 
