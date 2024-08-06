@@ -78,7 +78,7 @@ else
     abort "Failed to install XCode command line tools."
 fi
 
-if [[ "$MACHINE" == "OSX" && -x "$(command -v fish)" ]];
+if [ "$MACHINE" == "OSX" ] && ! [ -x "$(command -v fish)" ];
 then
     info "Adjusting macOS settings."
     einfo "Enabling tap to click."
