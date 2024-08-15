@@ -47,5 +47,6 @@ cask "rocket"
 cask "typora"
 
 mas "Amphetamine", id: 937984704
+mas "Color Picker", id: 1545870783
 mas "Flow", id: 1423210932
 mas "NordVPN", id: 905953485
