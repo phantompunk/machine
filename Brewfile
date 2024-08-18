@@ -44,6 +44,7 @@ cask "kitty"
 cask "notunes"
 cask "obsidian"
 cask "rocket"
+cask "spotify"
 cask "typora"
 
 mas "Amphetamine", id: 937984704
