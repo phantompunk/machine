@@ -71,8 +71,6 @@ abort() {
  
 info "Installing Xcode command line tools..."
 if xcode-select --print-path &>/dev/null; then
-    ok "XCode command line tools already installed."
-elif xcode-select --install &>/dev/null; then
     ok "Finished installing XCode command line tools."
 else
     abort "Failed to install XCode command line tools."
@@ -150,6 +148,12 @@ then
     eok "Folders ~/go/{bin,src,pkg} created successfully."
 else
     ok "Go directory already configured."
+fi
+
+if ! [ -x "$(command -v deno)" ];
+then
+    info "Installing Deno using deno.land install script"
+    curl -fsSL https://deno.land/install.sh | sh
 fi
  
 info "Installing apps from AppStore..."
