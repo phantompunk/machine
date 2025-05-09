@@ -85,6 +85,8 @@ then
     defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
     einfo "Remap Caps Lock to Escape."
     hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'
+    efinfo "Disable special characters from key press"
+    defaults write -g ApplePressAndHoldEnabled -bool false
 fi
 
 info "Checking Git installation"
